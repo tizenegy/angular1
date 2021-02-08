@@ -1,0 +1,12 @@
+.app-component{
+    margin-top: 2em;
+    color: darkgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightyellow;
+}
+.servers-component{
+    margin-top: 2em;
+    color: rgb(97, 97, 97);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 255, 168);
+}
