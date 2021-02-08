@@ -1,5 +1,6 @@
 .app-component{
     margin-top: 2em;
+    padding: 1em;
     text-align: center;
     vertical-align: middle;
     color: darkgrey;
@@ -8,7 +9,15 @@
 }
 .servers-component{
     margin-top: 2em;
+    padding: 1em;
     color: rgb(97, 97, 97);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(255, 255, 168);
+}
+.server-component{
+    margin-top: 2em;
+    padding: 1em;
+    color: rgb(54, 54, 54);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(250, 250, 100);
 }
