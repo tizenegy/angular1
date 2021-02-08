@@ -1,7 +1,13 @@
 <p>This is the Servers Component!</p>
 <!-- example of property binding: the disabled property is bound to the allowNewServer 
-    property in servers.component.ts -->
-<button class="btn btn-primary" [disabled]="!allowNewServer">add to server</button>
+    property in servers.component.ts.
+    example of event binding: on click, the function onCreateServer is called. -->
+<button class="btn btn-primary" 
+[disabled]="!allowNewServer"
+(click)="onCreateServer()"
+>add server</button>
+<p>{{ serverCreationStatus }}</p>
+<p></p>
 <p>Status of allowNewServer:</p>
 <!-- another example of property binding: -->
 <p [innerText]="allowNewServer"></p>

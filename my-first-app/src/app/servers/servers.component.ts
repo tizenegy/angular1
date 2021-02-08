@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   //this property is an example of property binding, 
-  //as it is bound to the disabled property of the button in the html file.
+  //as it is bound to the disabled property of the button in servers.component.html.
   allowNewServer: boolean = false;
+  serverCreationStatus = "No server was created.";
 
   constructor() { 
     //this timeout function is used to demonstrate the property binding via allowNewServer
@@ -18,6 +19,11 @@ export class ServersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  //example for event binding: this function is called by the button on servers.component.html.
+  onCreateServer(){
+    this.serverCreationStatus = "Server was created.";
   }
 
 }
