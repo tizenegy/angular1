@@ -1,5 +1,10 @@
 <p>This is the Servers Component!</p>
-<button class="btn btn-primary">add to server</button>
+<!-- example of property binding: the disabled property is bound to the allowNewServer 
+    property in servers.component.ts -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">add to server</button>
+<p>Status of allowNewServer:</p>
+<!-- another example of property binding: -->
+<p [innerText]="allowNewServer"></p>
 <div class="server-component">
     <app-server></app-server>
 </div>
