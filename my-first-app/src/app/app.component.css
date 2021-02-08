@@ -1,5 +1,7 @@
 .app-component{
     margin-top: 2em;
+    text-align: center;
+    vertical-align: middle;
     color: darkgrey;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: lightyellow;
