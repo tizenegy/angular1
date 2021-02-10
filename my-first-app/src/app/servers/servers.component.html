@@ -1,4 +1,8 @@
 <p>This is the Servers Component!</p>
+<label>Server name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{ serverName }}</p>
+
 <!-- example of property binding: the disabled property is bound to the allowNewServer 
     property in servers.component.ts.
     example of event binding: on click, the function onCreateServer is called. -->
@@ -7,7 +11,7 @@
 (click)="onCreateServer()"
 >add server</button>
 <p>{{ serverCreationStatus }}</p>
-<p></p>
+<br>
 <p>Status of allowNewServer:</p>
 <!-- another example of property binding: -->
 <p [innerText]="allowNewServer"></p>
