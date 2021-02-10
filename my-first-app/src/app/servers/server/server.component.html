@@ -1,3 +1,8 @@
 <p>This is the Server Component</p>
 <!-- example of string interpolation. the strings are bound to server.component.ts. -->
 <p>Server {{ serverId }} is {{ getServerStatus() }}</p>
+
+<input type="text" class="form-control" [(ngModel)]="username" (input)="onInputEnableButton()">
+<p>{{ username }}</p>
+<br>
+<button class="btn btn-primary" [disabled]="inputEmpty" (click)="onClickResetUsername()">add user</button>

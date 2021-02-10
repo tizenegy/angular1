@@ -10,7 +10,7 @@ export class ServersComponent implements OnInit {
   //as it is bound to the disabled property of the button in servers.component.html.
   allowNewServer: boolean = false;
   serverCreationStatus = "No server was created.";
-  serverName = "";
+  serverName = "enter server name here";
 
   constructor() { 
     //this timeout function is used to demonstrate the property binding via allowNewServer
@@ -24,7 +24,7 @@ export class ServersComponent implements OnInit {
 
   //example for event binding: this function is called by the button on servers.component.html.
   onCreateServer(){
-    this.serverCreationStatus = "Server was created.";
+    this.serverCreationStatus = "Server " + this.serverName + " was created.";
   }
 
   //example of event binding: taking the value of an input and displaying it below.
